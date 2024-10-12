@@ -24,31 +24,21 @@ const Navbar = () => {
           MahadiBlog
         </div> */}
         <Image
-          className="hidden dark:flex dark:invert ml-10 aspect-auto"
+          className="hidden dark:flex dark: ml-10 aspect-auto"
           src="/logo_black.png"
           alt="Next.js logo"
           width={150}
           height={38}
           priority
         />
-        <div className="flex dark:hidden ml-10 space-x-2">
-          <Image
-            className="aspect-auto"
-            src="/logo_head.png"
-            alt="Next.js logo"
-            width={50}
-            height={50}
-            priority
-          />
-          <Image
-            className=""
-            src="/logo_body.png"
-            alt="Next.js logo"
-            width={180}
-            height={20}
-            priority
-          />
-        </div>
+        <Image
+          className="aspect-auto dark:hidden ml-10"
+          src="/logo_white.png"
+          alt="Next.js logo"
+          width={150}
+          height={50}
+          priority
+        />
         <div className="flex md:hidden mr-3">
           <Sheet>
             <SheetTrigger>

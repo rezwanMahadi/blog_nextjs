@@ -1,9 +1,8 @@
 "use client";
 
-import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button"
-import {ModeToggle} from '@/components/theme-btn'
+import { ModeToggle } from '@/components/theme-btn'
 import Image from "next/image";
 import {
   Sheet,
@@ -17,14 +16,9 @@ import {
 
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   return (
-    <nav className="p-4 bg-background/50 sticky top-0 border-b backdrop-blur-md">
+    <nav className="p-4 bg-background/50 sticky top-0 border-b backdrop-blur-sm">
       <div className="container mx-auto flex justify-between items-center">
         {/* <div className="text-xl font-bold ml-10">
           MahadiBlog
@@ -41,22 +35,31 @@ const Navbar = () => {
           <Sheet>
             <SheetTrigger>
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
               </svg>
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                {/* <SheetTitle>Menu</SheetTitle> */}
+                <SheetTitle>
+                  <Image
+                    className="dark:invert ml-10 aspect-auto"
+                    src="https://nextjs.org/icons/next.svg"
+                    alt="Next.js logo"
+                    width={150}
+                    height={38}
+                    priority
+                  />
+                </SheetTitle>
                 <SheetDescription>
                   <div className="flex flex-col justify-center text-[20px] space-y-5 mt-10">
                     <Link href="/" className="border-b pb-3">Home</Link>
                     <Link href="/about" className="border-b pb-3">About</Link>
                     <Link href="/contact" className="border-b pb-3">Contact</Link>
                     <Link href="/blog" className="border-b pb-3">Blog</Link>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col space-y-4">
                       <Button variant="outline">Log in</Button>
                       <Button variant="outline">Sign up</Button>
-                      <ModeToggle/>
+                      <ModeToggle />
                     </div>
                   </div>
                 </SheetDescription>
@@ -72,7 +75,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <Button variant="outline">Log in</Button>
             <Button variant="outline">Sign up</Button>
-            <ModeToggle/>
+            <ModeToggle />
           </div>
         </div>
       </div>

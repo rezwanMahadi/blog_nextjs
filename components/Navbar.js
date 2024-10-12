@@ -18,7 +18,7 @@ import {
 const Navbar = () => {
 
   return (
-    <nav className="p-4 bg-background/50 sticky top-0 border-b backdrop-blur-sm">
+    <nav className="p-4 bg-gray-200/50 dark:bg-gray-700/50 sticky top-0 backdrop-blur-sm font-[family-name:var(--font-ubuntu-medium)]">
       <div className="container mx-auto flex justify-between items-center">
         {/* <div className="text-xl font-bold ml-10">
           MahadiBlog
@@ -68,7 +68,7 @@ const Navbar = () => {
           </Sheet>
         </div>
         <div className="flex-col md:text-[20px] md:flex md:flex-row md:space-x-10 md:mr-10 hidden">
-          <Link className="hover:text-gray-400" href="/">Homee</Link>
+          <Link className="hover:text-gray-400" href="/">Home</Link>
           <Link className="hover:text-gray-400" href="/about">About</Link>
           <Link className="hover:text-gray-400" href="/contact">Contact</Link>
           <Link className="hover:text-gray-400" href="/blog">Blog</Link>

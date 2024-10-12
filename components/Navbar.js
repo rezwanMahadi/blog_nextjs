@@ -64,8 +64,8 @@ const Navbar = () => {
             </SheetContent>
           </Sheet>
         </div>
-        <div className="flex-col md:text-[20px] md:flex md:flex-row md:space-x-10 md:mr-10">
-          <Link className="hover:text-gray-400" href="/">Home</Link>
+        <div className="flex-col md:text-[20px] md:flex md:flex-row md:space-x-10 md:mr-10 hidden">
+          <Link className="hover:text-gray-400" href="/">Homee</Link>
           <Link className="hover:text-gray-400" href="/about">About</Link>
           <Link className="hover:text-gray-400" href="/contact">Contact</Link>
           <Link className="hover:text-gray-400" href="/blog">Blog</Link>

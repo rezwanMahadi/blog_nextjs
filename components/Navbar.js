@@ -53,7 +53,7 @@ const Navbar = () => {
                     <Link href="/about" className="border-b pb-3">About</Link>
                     <Link href="/contact" className="border-b pb-3">Contact</Link>
                     <Link href="/blog" className="border-b pb-3">Blog</Link>
-                    <div className="flex items-center">
+                    <div className="flex flex-col">
                       <Button variant="outline">Log in</Button>
                       <Button variant="outline">Sign up</Button>
                       <ModeToggle/>

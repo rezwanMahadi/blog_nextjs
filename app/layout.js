@@ -10,6 +10,7 @@ const UbuntuMedium = localFont({
 });
 const UbuntuRegular = localFont({
   src: "./fonts/Ubuntu-Regular.woff",
+  variable: "--font-ubuntu-regular",
   weight: "300 400 500 700",
 });
 
@@ -21,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${UbuntuMedium.variable} antialiased`}>
+      <body className={`${UbuntuMedium.variable} ${UbuntuRegular.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

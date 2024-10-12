@@ -18,7 +18,7 @@ import {
 const Navbar = () => {
 
   return (
-    <nav className="p-4 bg-gray-200/50 dark:bg-gray-700/50 sticky top-0 backdrop-blur-sm font-[family-name:var(--font-ubuntu-medium)]">
+    <nav className="p-4 bg-gray-200/50 dark:bg-gray-700/50 sticky top-0 backdrop-blur-sm font-[family-name:var(--font-ubuntu-regular)]">
       <div className="container mx-auto flex justify-between items-center">
         {/* <div className="text-xl font-bold ml-10">
           MahadiBlog
@@ -73,8 +73,8 @@ const Navbar = () => {
                     <Link href="/contact" className="border-b pb-3">Contact</Link>
                     <Link href="/blog" className="border-b pb-3">Blog</Link>
                     <div className="flex flex-col space-y-4">
-                      <Button variant="outline">Log in</Button>
-                      <Button variant="outline">Sign up</Button>
+                      <Button variant="outline" className="bg-blue-700 text-white hover:bg-blue-900 hover:text-white">Log in</Button>
+                      <Button variant="outline" className="bg-violet-700 text-white hover:bg-violet-900 hover:text-white">Sign up</Button>
                       <ModeToggle />
                     </div>
                   </div>
@@ -84,13 +84,13 @@ const Navbar = () => {
           </Sheet>
         </div>
         <div className="flex-col md:text-[20px] md:flex md:flex-row md:space-x-10 md:mr-10 hidden">
-          <Link className="hover:text-gray-400" href="/">Home</Link>
-          <Link className="hover:text-gray-400" href="/about">About</Link>
-          <Link className="hover:text-gray-400" href="/contact">Contact</Link>
-          <Link className="hover:text-gray-400" href="/blog">Blog</Link>
+          <Link className="hover:text-[#F6A01E] hover:scale-125 transition-transform duration-150" href="/">Home</Link>
+          <Link className="hover:text-[#F6A01E] hover:scale-125 transition-transform duration-150 active:text-[#F6A01E]" href="/about">About</Link>
+          <Link className="hover:text-[#F6A01E] hover:scale-125 transition-transform duration-150" href="/contact">Contact</Link>
+          <Link className="hover:text-[#F6A01E] hover:scale-125 transition-transform duration-150" href="/blog">Blog</Link>
           <div className="flex items-center space-x-4">
-            <Button variant="outline">Log in</Button>
-            <Button variant="outline">Sign up</Button>
+            <Button variant="outline" className="bg-blue-700 text-white hover:bg-blue-900 hover:text-white">Log in</Button>
+            <Button variant="outline" className="bg-violet-700 text-white hover:bg-violet-900 hover:text-white"Z>Sign up</Button>
             <ModeToggle />
           </div>
         </div>

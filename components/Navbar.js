@@ -24,7 +24,7 @@ const Navbar = () => {
           MahadiBlog
         </div> */}
         <Image
-          className="hidden dark:flex dark: ml-10 aspect-auto"
+          className="hidden dark:flex dark: ml-4 md:ml-10 aspect-auto"
           src="/logo_black.png"
           alt="Next.js logo"
           width={150}
@@ -32,7 +32,7 @@ const Navbar = () => {
           priority
         />
         <Image
-          className="aspect-auto dark:hidden ml-10"
+          className="aspect-auto dark:hidden ml-4 md:ml-10"
           src="/logo_white.png"
           alt="Next.js logo"
           width={150}
@@ -50,11 +50,19 @@ const Navbar = () => {
               <SheetHeader>
                 <SheetTitle>
                   <Image
-                    className="dark:invert ml-10 aspect-auto"
-                    src="/logo.png"
+                    className="hidden dark:flex aspect-auto"
+                    src="/logo_black.png"
                     alt="Next.js logo"
                     width={150}
                     height={38}
+                    priority
+                  />
+                  <Image
+                    className="aspect-auto dark:hidden"
+                    src="/logo_white.png"
+                    alt="Next.js logo"
+                    width={150}
+                    height={50}
                     priority
                   />
                 </SheetTitle>

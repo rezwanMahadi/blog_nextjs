@@ -24,13 +24,31 @@ const Navbar = () => {
           MahadiBlog
         </div> */}
         <Image
-          className="dark:invert ml-10 aspect-auto"
-          src="https://nextjs.org/icons/next.svg"
+          className="hidden dark:flex dark:invert ml-10 aspect-auto"
+          src="/logo_black.png"
           alt="Next.js logo"
           width={150}
           height={38}
           priority
         />
+        <div className="flex dark:hidden ml-10 space-x-2">
+          <Image
+            className="aspect-auto"
+            src="/logo_head.png"
+            alt="Next.js logo"
+            width={50}
+            height={50}
+            priority
+          />
+          <Image
+            className=""
+            src="/logo_body.png"
+            alt="Next.js logo"
+            width={180}
+            height={20}
+            priority
+          />
+        </div>
         <div className="flex md:hidden mr-3">
           <Sheet>
             <SheetTrigger>
@@ -43,7 +61,7 @@ const Navbar = () => {
                 <SheetTitle>
                   <Image
                     className="dark:invert ml-10 aspect-auto"
-                    src="https://nextjs.org/icons/next.svg"
+                    src="/logo.png"
                     alt="Next.js logo"
                     width={150}
                     height={38}
